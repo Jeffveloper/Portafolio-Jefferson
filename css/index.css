@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+:root{
+    --gradiante: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #82e974 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #7285f2 0%, #51e5c0 100%);
+
+    --font_base:'Poppins', sans-serif;
+    --headline1: bold 95px/154px var(--font_base);
+    --headline2: bold 59/95px var(--font_base);
+    --headline3: bold 48px/78px var(--font_base);
+    --headline4: bold 34px/55px var(--font_base);
+    --headline5: bold 24px/38px var(--font_base);
+    --body_1: 16px/25px var(--font_base);
+    --body_2: 14px/22px var(--font_base);
+    --button: bold 14px/22px var(--font_base);
+    --caption: 12px/19px var(--font_base);
+
+    --purple: #4a138a;
+    --green:#42e2e2;
+    --white: white;
+}
+
+body{
+    background:var(--gradiante);
+    min-block-size: 100vh;
+    margin: 0;
+    font: var(--body_1);
+    color: var(--purple);
+    max-height: auto;
+
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}

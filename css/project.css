@@ -1,0 +1,31 @@
+.project{
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+.project-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media (min-width: 768px) {
+    .project{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+    .project-desc{
+        flex: 1;
+    }
+    .project:nth-child(odd) .project-img{
+        order: 2;
+        flex: 1;
+        text-align: center;
+    }
+    .project-img img{
+        inline-size: 100%;
+        block-size: auto;
+    }
+}

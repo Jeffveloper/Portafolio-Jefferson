@@ -1,0 +1,48 @@
+.hero{
+    border: 1px ;
+    padding-block-start: 16px;
+
+}
+
+.hero-img{
+    text-align: center;
+}
+.hero-img img{
+    border-radius: 20px;
+}
+.hero-desc{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hero h1{
+    font: var(--headline3);
+    padding-top: 40px ;
+    margin: 0;
+}
+.hero h1 span:first-child{
+    font: var(--headline5);
+    display: block;
+}
+@media (min-width: 768px) {
+    .hero{
+        display: flex;
+        gap: 120px;
+    }
+    .hero-img{
+        order: 2;
+        text-align: right;
+        flex: 1;
+    }
+    .hero-desc{
+        order: 1;
+        max-inline-size: 450;
+    }
+
+}
+@media (min-width: 1024px) {
+    .hero-img img{
+        inline-size: 500px;
+        block-size: 504px;
+    }
+}

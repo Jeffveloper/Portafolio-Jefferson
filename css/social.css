@@ -1,0 +1,6 @@
+.social{
+    padding-block-start: 15px;
+    padding-block-end: 40px;
+    display: flex;
+    gap: 16px;
+}

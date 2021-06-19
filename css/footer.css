@@ -1,0 +1,40 @@
+.footer-content{
+    color: var(--white);
+    text-align: center;
+}
+.footer-logo{
+    display: none;
+}
+.footer .social{
+    justify-content: center;
+    padding: 0;
+}
+
+
+@media (min-width: 768px) {
+    .footer-logo{
+        display: block;
+    }
+    .footer-content{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .social{
+        justify-content: center;
+        order: 3;
+        padding: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .footer-copy{
+        display: flex;
+        gap: 8px;
+    }
+    .footer{
+        margin-block-start: 40px;
+        margin-block-end: 40px;
+    }
+   
+}
